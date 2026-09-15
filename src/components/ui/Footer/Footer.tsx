@@ -55,7 +55,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className='relative' id='contact'>
+      <div className='relative mb-5' id='contact'>
       Footer  
        {/* Decorative Circles */}
         <div className="absolute -top-20 -left-20 w-40 h-40 overflow-hidden z-10">
@@ -97,15 +97,17 @@ Whether you’re looking to collaborate, have a project in mind, or simply want 
              transition
              hover:bg-[#E53935] hover:text-white
              hover:shadow-[0_0_15px_rgba(239,68,68,0.7)]"
-  onClick={() => window.open("tel:+1234567890")}
 >
   <PhoneFilled />
 </button>                  
-                        <a href="tel:+977-9868339080"
+                        {/* <a href="tel:+977-9868339080"
   className="text-base font-medium text-black transition group-hover:text-[#E53935] group-hover:underline"
 >
   +977-9868339080
-</a>
+</a> */}
+<div>
+  +9779868339080
+</div>
                       </div>
 
 
@@ -114,12 +116,7 @@ Whether you’re looking to collaborate, have a project in mind, or simply want 
                         <div className=" flex items-center gap-3">
   <button
     type="button"
-    onClick={() =>
-      window.open(
-        "https://maps.app.goo.gl/WpCorC7Hg5sfc4fL7",
-        "_blank"
-      )
-    }
+   
     className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full
                text-2xl text-[#E53935]
                transition
@@ -130,7 +127,7 @@ Whether you’re looking to collaborate, have a project in mind, or simply want 
     <IoLocation />
   </button>
 
-  <a
+  {/* <a
     href="https://maps.app.goo.gl/WpCorC7Hg5sfc4fL7"
     target="_blank"
     rel="noopener noreferrer"
@@ -139,21 +136,18 @@ Whether you’re looking to collaborate, have a project in mind, or simply want 
                group-hover:underline"
   >
     Kathmandu, Nepal
-  </a>
+  </a> */}
+  <div>Kathmandu, Nepal</div>
 </div>
 
                       </div>
                     </div>
                   </div>
                 </div>
-
-                {/* Contact Form */}
-              
-
+                {/* Contact Form */}   
                 <div className="w-full md:w-[40%]">
   <div className="w-full rounded-lg bg-white p-6 text-center shadow-lg">
     <form onSubmit={onFormSubmitted} className="space-y-4">
-      {/* Name */}
       <div>
         <input
           type="text"
@@ -166,7 +160,6 @@ Whether you’re looking to collaborate, have a project in mind, or simply want 
         />
       </div>
 
-      {/* Email */}
       <div>
         <input
           type="email"
@@ -179,7 +172,6 @@ Whether you’re looking to collaborate, have a project in mind, or simply want 
         />
       </div>
 
-      {/* Message */}
       <div>
         <textarea
           name="message"
@@ -192,7 +184,6 @@ Whether you’re looking to collaborate, have a project in mind, or simply want 
         />
       </div>
 
-      {/* Submit */}
       <button
         type="submit"
         disabled={loading}

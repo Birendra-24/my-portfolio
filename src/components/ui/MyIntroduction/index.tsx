@@ -74,6 +74,7 @@ const index = () => {
                   src={image}
                   alt="Birendra Kshetri"
                   layout="fill"
+                  loading='eager'
                   objectFit="cover"
                   className="hover:scale-105 transition-transform duration-300"
                 />
@@ -210,6 +211,7 @@ const index = () => {
           </motion.div>
         </Flex>
     </div>
+   
   )
 }
 export default index
