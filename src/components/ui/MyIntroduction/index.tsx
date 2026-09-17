@@ -134,7 +134,7 @@ const index = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button
+                {/* <Button
                   shape="round"
                   type="primary"
                   onClick={() => {
@@ -146,7 +146,7 @@ const index = () => {
                   }}
                 >
                   View My Work
-                </Button>
+                </Button> */}
               </motion.div>
 
               <motion.div
