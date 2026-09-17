@@ -72,7 +72,7 @@ const Navbar = () => {
 
 {/* right side button */}
  <div className="flex items-center m-3 gap-3">
-            <a href="/birendra-resume-2023.pdf" download>
+            <a href="/birendra-resume.pdf" download>
               <button type="button"  className="flex items-center gap-2 bg-red-500 text-white p-2">
                 <IoMdDownload />
                 {/* Text */}
